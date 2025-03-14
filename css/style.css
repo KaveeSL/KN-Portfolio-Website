@@ -728,6 +728,28 @@ body.offcanvas {
     .services.color-6 .icon:after {
       border-color: #4054b2 transparent transparent transparent; }
 
+/* Equal height service boxes */
+.services-row {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.services-row .col-md-4 {
+  display: flex;
+}
+
+.services-row .services {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-row .services .desc {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 .progress-wrap h3 {
   font-size: 16px;
   font-family: "Quicksand", Arial, sans-serif;
@@ -1090,7 +1112,7 @@ body.offcanvas {
     display: -moz-inline-stack;
     display: inline-block;
     zoom: 1;
-    *display: inline; }
+    display: inline; }
     .colorlib-social li a {
       font-size: 22px;
       color: #000;
@@ -1098,7 +1120,7 @@ body.offcanvas {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
-      *display: inline;
+      display: inline;
       -webkit-border-radius: 7px;
       -moz-border-radius: 7px;
       -ms-border-radius: 7px;
