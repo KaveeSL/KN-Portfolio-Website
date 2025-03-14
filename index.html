@@ -49,6 +49,27 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
+
+
+
+<!-- Email sender -->
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "v7FpjYU0fcpGYhi4E",
+      });
+   })();
+</script>
+
+<script src="script.js"></script>
+<!-- Email sender -->
+
+
+
+
 	</head>
 	<body>
 	<div id="colorlib-page">
@@ -735,7 +756,8 @@ Copyright <script>document.write(new Date().getFullYear());</script> All rights 
 											<textarea name="" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
 										</div>
 										<div class="form-group">
-											<input type="submit" class="btn btn-primary btn-send-message" value="Send Message">
+											<button type="submit" onclick="sendMail()">SEND
+											</button>
 										</div>
 									</form>
 								</div>
